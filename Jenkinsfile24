@@ -6,8 +6,12 @@ stages
 
 {
 stage ('print')
-{ steps {sh 'echo Hello_Jenkins'}}
+{ steps {sh 'echo Hello_Jenkins'} }
+
+stage ('build the code')
+{ steps {sh 'echo code is building'} }
+
+
 
 }
-
 }
